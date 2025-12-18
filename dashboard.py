@@ -5,6 +5,8 @@ from course import CourseClass
 from student import studentClass    
 from result import resultClass
 from report import reportClass
+import sqlite3
+
 class RMS:
     def __init__(self,root):
         self.root=root
@@ -113,6 +115,10 @@ class RMS:
         self.footer.place(relx=0, rely=1, anchor="sw", relwidth=1, height=40)
         self.footer.lift()
 
+        # >>>>>>>>>> NEW LINE ADDED HERE <<<<<<<<<<
+        self.update_details()
+
+
     def add_course(self):
         self.new_win=Toplevel(self.root)
         self.new_obj=CourseClass(self.new_win)
@@ -141,8 +147,30 @@ class RMS:
         op=messagebox.askyesno("Confirm","Do you really want to exit?",parent=self.root)
         if op==True:
             self.root.destroy()
+
+    def update_details(self):
+        con=sqlite3.connect(database="rms.db")
+        cur=con.cursor()
+        try:
+            cur.execute("SELECT * FROM course")
+            cr=cur.fetchall()
+            self.lbl_course.config(text=f"Total Courses\n[ {str(len(cr))} ]")
+
+            cur.execute("SELECT * FROM student")
+            st=cur.fetchall()
+            self.lbl_student.config(text=f"Total Students\n[ {str(len(st))} ]")
+
+            cur.execute("SELECT * FROM result")
+            rs=cur.fetchall()
+            self.lbl_result.config(text=f"Total Results\n[ {str(len(rs))} ]")
+        except Exception as ex:
+            messagebox.showerror("Error",f"Error due to {str(ex)}",parent=self.root)
+
+        # >>>>>>>>>> AUTO REFRESH EVERY 2 SEC <<<<<<<<<<      
+        self.root.after(2000, self.update_details)
+
+
 if __name__ == "__main__":
     root=Tk()
     obj=RMS(root)
     root.mainloop()
-        

@@ -53,12 +53,16 @@ class Login:
             else:
                 messagebox.showinfo("Success", f"Welcome {row[1]}!", parent=self.root)
                 self.root.destroy()
-                os.system("python dashboard.py")
+                import dashboard
+                root = Tk()
+                obj = dashboard.RMS(root)
+                root.mainloop()
 
             con.close()
 
         except Exception as ex:
             messagebox.showerror("Error", f"Error due to {str(ex)}", parent=self.root)
+
 
     def open_register(self):
      self.root.destroy()
