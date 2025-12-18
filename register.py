@@ -87,8 +87,7 @@ class Register:
                .place(x=450,y=600,width=300,height=50)
 
         Button(self.root,text="Sign In",font=("times new roman",20,"bold"),
-               bg="green",fg="white",cursor="hand2")\
-               .place(x=450,y=670,width=300,height=50)
+               bg="green",fg="white",cursor="hand2",command=self.open_login).place(x=450,y=670,width=300,height=50)
 
     def register_data(self):
         if self.txt_fname.get()=="" or self.txt_email.get()=="" or self.txt_s_question.get()=="Select" or self.txt_answer.get()=="" or self.txt_password.get()=="" or self.txt_confirm_password.get()=="" or self.txt_contact_no.get()=="":
@@ -128,7 +127,11 @@ class Register:
                 messagebox.showerror("Error",f"Error due to {str(ex)}",parent=self.root)
     def open_login(self):
         self.root.destroy()
-        os.system("login.py")
+        import login
+        root = Tk()
+        obj = login.Login(root)
+        root.mainloop()
+
 
 if __name__ == "__main__":
     root=Tk()
