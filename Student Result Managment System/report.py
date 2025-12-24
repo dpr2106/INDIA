@@ -16,7 +16,7 @@ class reportClass:
                     font=("goudy old style",30,"bold"),
                     bg="orange",
                     fg="#262626",).place(x=10,y=15,width=1180,height=50)
-        fnjkdskdnkdgnkdjfgnkfdngjkf
+        
         self.var_search=StringVar()
         self.var_id=""
         lbl_search=Label(self.root,

@@ -1,0 +1,17 @@
+
+	    Super Low Supermarket
+
+Bill Number : 6949
+Customer Name : csdc
+Phone Number : cdsc
+=====================================
+Products		QTY		Price
+=====================================
+Mysore Sandal		1		40
+Chips		1		30
+-------------------------------------
+Cosmetic Tax			Rs. 2.0
+Grocery Tax			Rs. 1.5
+-------------------------------------
+Total Bill : 73.5
+-------------------------------------

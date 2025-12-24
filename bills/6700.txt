@@ -1,0 +1,17 @@
+
+	    Super Low Supermarket
+
+Bill Number : 6700
+Customer Name : dasdas
+Phone Number : dsa
+=====================================
+Products		QTY		Price
+=====================================
+Colgate		1		60
+Coke		1		50
+-------------------------------------
+Cosmetic Tax			Rs. 3.0
+Grocery Tax			Rs. 2.5
+-------------------------------------
+Total Bill : 115.5
+-------------------------------------

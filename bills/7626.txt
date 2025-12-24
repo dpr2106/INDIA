@@ -1,0 +1,17 @@
+	Welcome to Billing Software
+
+Bill Number : 7626
+Customer Name : sad
+Phone Number : dsad
+=====================================
+Products		QTY		Price
+=====================================
+Mysore Sandal		1		40
+Colgate		1		60
+Chips		1		30
+-------------------------------------
+Cosmetic Tax			Rs. 5.0
+Grocery Tax			Rs. 1.5
+-------------------------------------
+Total Bill : 136.5
+-------------------------------------

@@ -1,0 +1,15 @@
+
+	    Super Low Supermarket
+
+Bill Number : 6483
+Customer Name : cdscs
+Phone Number : csdcsc
+=====================================
+Products		QTY		Price
+=====================================
+Coke		1		50
+-------------------------------------
+Grocery Tax			Rs. 2.5
+-------------------------------------
+Total Bill : 52.5
+-------------------------------------

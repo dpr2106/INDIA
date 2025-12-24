@@ -166,7 +166,7 @@ class RMS:
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to {str(ex)}",parent=self.root)
 
-        # >>>>>>>>>> AUTO REFRESH EVERY 2 SEC <<<<<<<<<<      
+        # >>>>>>>>>> AUTO REFRESH EVERY 2 SEC <<<<<<<<<<      i aa/a
         self.root.after(2000, self.update_details)
 
 

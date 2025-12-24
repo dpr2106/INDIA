@@ -1,0 +1,18 @@
+
+		Super Low Supermarket
+
+	Bill Number : 3671
+	Customer Name : sad
+	Phone Number : as
+      =====================================
+      Products		QTY		Price
+      =====================================
+Mysore Sandal		1		40
+Colgate		1		60
+Coke		1		50
+-------------------------------------
+Cosmetic Tax			Rs. 5.0
+Grocery Tax			Rs. 2.5
+-------------------------------------
+Total Bill : 157.5
+-------------------------------------

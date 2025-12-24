@@ -1,0 +1,17 @@
+
+	    Super Low Supermarket
+
+Bill Number : 8148
+Customer Name : 324
+Phone Number : sdc
+=====================================
+Products		QTY		Price
+=====================================
+Mysore Sandal		1		40
+Biscuits		1		40
+-------------------------------------
+Cosmetic Tax			Rs. 2.0
+Grocery Tax			Rs. 2.0
+-------------------------------------
+Total Bill : 84.0
+-------------------------------------
